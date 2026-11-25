@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты | Портфолио веб-разработчика</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Даулет Ш.</a>
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="projects.html" class="active">Проекты</a></li>
+                    <li><a href="index.html#skills">Навыки</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Мои проекты</h1>
+                <p>Учебные и личные работы по веб-разработке</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-badge">Учёба</div>
+                        <h2>Портфолио с Git</h2>
+                        <p>Этот сайт. Создан с нуля, размещён на GitHub Pages. Использованы ветки, Pull Request и адаптивная вёрстка.</p>
+                        <ul class="project-tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Git</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-badge">Практика</div>
+                        <h2>Учебный справочник</h2>
+                        <p>Небольшой справочник по командам Git и основам работы с репозиториями. Планирую добавить поиск и примеры.</p>
+                        <ul class="project-tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Markdown</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-badge">Идея</div>
+                        <h2>Каталог ресурсов</h2>
+                        <p>Подборка полезных ссылок для начинающих веб-разработчиков: документация, курсы, инструменты.</p>
+                        <ul class="project-tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Организация</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="projects-note">
+                    <h2>Как устроен этот сайт</h2>
+                    <p>Разработка велась поэтапно. Сначала была создана основная структура, затем добавлена страница проектов, после чего сайт был адаптирован под мобильные устройства. Все изменения фиксировались в отдельных ветках и объединялись через Pull Request.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Алексей К. Учебный проект по Git и GitHub.</p>
+            <p><a href="index.html">Вернуться на главную</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('nav-toggle');
+        const nav = document.getElementById('main-nav');
+        if (toggle && nav) {
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>

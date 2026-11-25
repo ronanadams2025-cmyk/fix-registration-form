@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио веб-разработчика | Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Даулет .Ш</a>
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Меню">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Привет, я Алексей</h1>
+                <p class="hero-subtitle">Начинающий веб-разработчик. Создаю удобные и современные сайты.</p>
+                <a href="projects.html" class="btn">Посмотреть проекты</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2>О себе</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Я изучаю веб-разработку и активно практикую HTML, CSS и Git. Этот сайт — результат учебной работы по созданию и публикации проекта с использованием системы контроля версий.</p>
+                        <p>Мне нравится превращать идеи в понятные интерфейсы. Стремлюсь писать чистый код и учитывать адаптивность на разных устройствах.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Цели</h3>
+                        <ul>
+                            <li>Освоить современную вёрстку</li>
+                            <li>Научиться работать с Git и GitHub</li>
+                            <li>Создавать полезные учебные проекты</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2>Навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>HTML</h3>
+                        <p>Семантическая разметка, доступность, формы</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>CSS</h3>
+                        <p>Flexbox, Grid, медиазапросы, переменные</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Git & GitHub</h3>
+                        <p>Ветки, коммиты, Pull Request, GitHub Pages</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Адаптивность</h3>
+                        <p>Мобильная вёрстка, удобство на телефонах</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+                <p>Готов обсудить учебные проекты и обмен опытом.</p>
+                <div class="contact-links">
+                    <a href="mailto:example@email.com" class="btn btn-outline">Написать письмо</a>
+                    <a href="projects.html" class="btn">Мои проекты</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Алексей К. Учебный проект по Git и GitHub.</p>
+            <p>Сайт создан в рамках практической работы.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('nav-toggle');
+        const nav = document.getElementById('main-nav');
+        if (toggle && nav) {
+            toggle.addEventListener('click', () => {
+                nav.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>
